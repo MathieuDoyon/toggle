@@ -10,5 +10,6 @@ packages/toggle/docs
 packages/**/mathdoy-toggle-*.tgz
 examples/**/static
 examples/**/dist
+examples/**/build
 cypress/videos
 cypress/screenshots
