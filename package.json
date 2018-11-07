@@ -8,7 +8,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "build": "lerna run build",
+    "build": "BABEL_ENV=cjs lerna run build",
     "lint": "eslint ./packages/**/src",
     "watch": "cd packages/toggle && yarn -s watch",
     "watch:react": "cd packages/toggle-react && yarn -s watch",
