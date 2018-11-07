@@ -1,0 +1,26 @@
+{
+  "name": "@mathdoy/toggle-restify",
+  "version": "0.0.0",
+  "description": "Toggle feature, a feature flag library for your restify backend",
+  "keywords": [],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "authors": [
+    "Mathieu Doyon"
+  ],
+  "repository": "toggle/toggle-restify",
+  "license": "ISC",
+  "scripts": {
+    "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src -d ./lib --ignore spec.js,test.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
+  }
+}

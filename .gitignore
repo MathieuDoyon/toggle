@@ -1,0 +1,13 @@
+npm-debug.log
+yarn-error.log
+lerna-debug.log
+node_modules
+lib
+esm
+es6
+docs/_site/
+packages/react-admin/docs
+examples/**/static
+examples/**/dist
+cypress/videos
+cypress/screenshots

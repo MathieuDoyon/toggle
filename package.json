@@ -1,0 +1,53 @@
+{
+  "name": "@mathdoy/root",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "lerna run build",
+    "lint": "eslint ./packages/**/src",
+    "watch": "cd packages/toggle && yarn -s watch",
+    "watch:react": "cd packages/toggle-react && yarn -s watch",
+    "watch:restify": "cd packages/toggle-restify && yarn -s watch",
+    "run-restify": "cd examples/restify && yarn -s watch",
+    "run-react": "cd examples/react && yarn -s start",
+    "prettier": "prettier-eslint --write --list-different \"packages/*/src/**/*.js\" \"examples/*/src/**/*.js\"",
+    "doc": "echo \"TBD\" && exit 0;"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test-setup.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "lerna": "^3.4.3",
+    "prettier": "^1.14.3",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
