@@ -9,7 +9,7 @@
   "authors": [
     "Mathieu Doyon"
   ],
-  "repository": "toggle/toggle",
+  "repository": "MathieuDoyon/toggle",
   "license": "ISC",
   "scripts": {
     "build": "rimraf ./lib && cross-env NODE_ENV=production babel ./src -d ./lib --ignore spec.js,test.js",
