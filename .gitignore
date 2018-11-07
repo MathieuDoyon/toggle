@@ -6,7 +6,8 @@ lib
 esm
 es6
 docs/_site/
-packages/react-admin/docs
+packages/toggle/docs
+packages/**/mathdoy-toggle-*.tgz
 examples/**/static
 examples/**/dist
 cypress/videos

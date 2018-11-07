@@ -19,5 +19,6 @@
     "babel-runtime": "^6.26.0",
     "cross-env": "^5.2.0",
     "rimraf": "^2.6.2"
-  }
+  },
+  "gitHead": "a6aebb3ee11037295048f779f6fd6f9d7e337995"
 }
