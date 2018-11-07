@@ -23,7 +23,19 @@ watch-react: ## watch toggle react module
 watch-restify: ## watch toggle restify module
 	@BABEL_ENV=cjs yarn -s watch:restify
 
-build: build-ra-core build-ra-ui-materialui build-react-admin build-ra-data-fakerest build-ra-data-json-server build-ra-data-simple-rest build-ra-data-graphql build-ra-data-graphcool build-ra-data-graphql-simple build-ra-input-rich-text build-ra-realtime build-ra-tree-core build-ra-tree-ui-materialui build-data-generator ## compile ES6 files to JS
+build: build-toggle build-toggle-react build-toggle-restify ## compile ES6 files to JS
+
+build-toggle:
+	@echo "Transpiling toggle files...";
+	@cd ./packages/toggle && BABEL_ENV=cjs yarn -s build
+
+build-toggle-react:
+	@echo "Transpiling toggle-react files...";
+	@cd ./packages/toggle-react && BABEL_ENV=cjs yarn -s build
+
+build-toggle-restify:
+	@echo "Transpiling toggle-restify files...";
+	@cd ./packages/toggle-restify && BABEL_ENV=cjs yarn -s build
 
 doc: ## compile doc as html and launch doc web server
 	@yarn -s doc
