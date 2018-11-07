@@ -1,6 +1,6 @@
 {
   "name": "example-react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -34,13 +34,13 @@
     "redux-mock-store": "^1.5.3"
   },
   "dependencies": {
+    "@mathdoy/toggle": "^1.0.0",
+    "@mathdoy/toggle-react": "^1.0.0",
     "classnames": "^2.2.6",
     "history": "^4.7.2",
     "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "^2.1.1",
-    "@mathdoy/toggle": "0.0.0",
-    "@mathdoy/toggle-react": "0.0.0"
+    "react-scripts": "^2.1.1"
   }
 }
