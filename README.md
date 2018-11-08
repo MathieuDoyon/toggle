@@ -11,9 +11,9 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 
 | Package         | Version     | Description    |
 | --------------- | ----------- | -------------- |
-| toggle          | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle)       | Toggle core library |
-| toggle-react    | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-react.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-react)       | React binder |
-| toggle-restify | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-restify.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-restify)        | Restify middleware |
+| [toggle](/packages/toggle)          | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle)       | Toggle core library |
+| [toggle-react](/packages/toggle-react)    | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-react.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-react)       | React binder |
+| [toggle-restify](/packages/toggle-restify) | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-restify.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-restify)        | Restify middleware |
 
 
 
