@@ -1,9 +1,9 @@
 <h1 align="center">
-  Toggle React
+  Toggle Restify
 </h1>
 
 <p align="center">
-Toggle React library for [toggle](https://github.com/MathieuDoyon/toggle)
+Toggle Restify library for [toggle](https://github.com/MathieuDoyon/toggle)
 </p>
 
 ## Installation
