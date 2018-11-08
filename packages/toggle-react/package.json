@@ -2,7 +2,7 @@
   "name": "@mathdoy/toggle-react",
   "version": "1.0.5",
   "description": "Toggle React feature, a feature flag library for your react frontend",
-  "keywords": [],
+  "keywords": ["Toggle", "features", "feature flags", "flags", "feature toggle", "feature switch"],
   "main": "lib/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
