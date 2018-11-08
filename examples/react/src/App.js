@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Toggle isEnabled="logo" disable={<FeatureDisable />}>
+          <Toggle isEnabled="logo" disableComponent={<FeatureDisable />}>
             <img src={logo} className="App-logo" alt="logo" />
           </Toggle>
           <p>

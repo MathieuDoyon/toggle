@@ -10,6 +10,7 @@ const toggle = createToggle({
   prefix: "X-FEAT-",
   features: {
     logo: false,
+    foo: false,
   },
 });
 
