@@ -48,20 +48,22 @@ prettier: ## prettify the source code using prettier
 	@echo "Running prettier..."
 	@yarn -s prettier
 
+test: build test-unit lint ## launch all tests
+
 # test: build test-unit lint test-e2e ## launch all tests
 
-# test-unit: ## launch unit tests
-# 	@if [ "$(CI)" != "true" ]; then \
-# 		echo "Running unit tests..."; \
-# 		yarn -s test-unit; \
-# 	fi
-# 	@if [ "$(CI)" = "true" ]; then \
-# 		echo "Running unit tests in CI..."; \
-# 		yarn -s test-unit-ci; \
-# 	fi
+test-unit: ## launch unit tests
+	@if [ "$(CI)" != "true" ]; then \
+		echo "Running unit tests..."; \
+		yarn -s test-unit; \
+	fi
+	@if [ "$(CI)" = "true" ]; then \
+		echo "Running unit tests in CI..."; \
+		yarn -s test-unit-ci; \
+	fi
 
-# test-unit-watch: ## launch unit tests and watch for changes
-# 	yarn -s test-unit --watch
+test-unit-watch: ## launch unit tests and watch for changes
+	yarn -s test-unit --watch
 
 # test-e2e: ## launch end-to-end tests
 # 	@if [ "$(build)" != "false" ]; then \

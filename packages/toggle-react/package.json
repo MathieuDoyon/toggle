@@ -10,7 +10,7 @@
     "Mathieu Doyon"
   ],
   "repository": "MathieuDoyon/toggle-react",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "build": "rimraf ./lib && cross-env NODE_ENV=production babel ./src -d ./lib --ignore spec.js,test.js",
     "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src -d ./lib --ignore spec.js,test.js"

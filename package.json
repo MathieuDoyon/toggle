@@ -9,6 +9,10 @@
   "license": "ISC",
   "scripts": {
     "build": "BABEL_ENV=cjs lerna run build",
+    "test": "yarn -s test-unit",
+    "test-ci": "yarn -s test-unit-ci",
+    "test-unit": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs echo \"TBD\" && exit 0;",
+    "test-unit-ci": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs echo \"TBD\" && exit 0;",
     "lint": "eslint ./packages/**/src",
     "watch": "cd packages/toggle && yarn -s watch",
     "watch:react": "cd packages/toggle-react && yarn -s watch",
