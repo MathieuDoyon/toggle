@@ -36,6 +36,7 @@
   "dependencies": {
     "@mathdoy/toggle": "^1.0.4",
     "@mathdoy/toggle-react": "^1.0.4",
+    "@mathdoy/toggle-querystring": "^1.0.4",
     "classnames": "^2.2.6",
     "history": "^4.7.2",
     "prop-types": "^15.6.2",

@@ -2,17 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createToggle } from "@mathdoy/toggle";
 import { ToggleProvider } from "@mathdoy/toggle-react";
+import { createToggleQuerystring } from "@mathdoy/toggle-querystring";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-const toggle = createToggle({
-  prefix: "X-FEAT-",
+const toggleQuerystring = createToggleQuerystring({
+  // Query string parameter
+  param: "features",
+  // Default features
   features: {
-    logo: false,
-    foo: false,
+    logo: true,
   },
 });
+
+const toggle = createToggle({
+  features: toggleQuerystring(window.location.search),
+});
+
+console.log({ features: toggle.features });
 
 ReactDOM.render(
   <ToggleProvider toggle={toggle}>

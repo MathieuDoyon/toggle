@@ -23,7 +23,10 @@ watch-react: ## watch toggle react module
 watch-restify: ## watch toggle restify module
 	@BABEL_ENV=cjs yarn -s watch:restify
 
-build: build-toggle build-toggle-react build-toggle-restify ## compile ES6 files to JS
+watch-qs: ## watch toggle querystring module
+	@BABEL_ENV=cjs yarn -s watch:qs
+
+build: build-toggle build-toggle-react build-toggle-restify build-toggle-qs ## compile ES6 files to JS
 
 build-toggle:
 	@echo "Transpiling toggle files...";
@@ -36,6 +39,10 @@ build-toggle-react:
 build-toggle-restify:
 	@echo "Transpiling toggle-restify files...";
 	@cd ./packages/toggle-restify && BABEL_ENV=cjs yarn -s build
+
+build-toggle-qs:
+	@echo "Transpiling toggle-qs files...";
+	@cd ./packages/toggle-querystring && BABEL_ENV=cjs yarn -s build
 
 doc: ## compile doc as html and launch doc web server
 	@yarn -s doc

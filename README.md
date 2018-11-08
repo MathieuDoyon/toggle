@@ -13,6 +13,7 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 | --------------- | ----------- | -------------- |
 | [toggle](/packages/toggle)          | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle)       | Toggle core library |
 | [toggle-react](/packages/toggle-react)    | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-react.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-react)       | React binder |
+| [toggle-querystring](/packages/toggle-querystring)    | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-querystring.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-querystring)       | Query string utilities use for toggle your feature in your client javascript file |
 | [toggle-restify](/packages/toggle-restify) | [![npm](https://img.shields.io/npm/v/@mathdoy/toggle-restify.svg?style=flat-square)](https://www.npmjs.com/package/@mathdoy/toggle-restify)        | Restify middleware |
 
 

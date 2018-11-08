@@ -1,7 +1,7 @@
 {
-  "name": "@mathdoy/toggle-react",
+  "name": "@mathdoy/toggle-querystring",
   "version": "1.0.4",
-  "description": "Toggle React feature, a feature flag library for your react frontend",
+  "description": "Toggle feature, a feature flag library for your frontend, enabled toggle through query string",
   "keywords": [],
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -21,8 +21,7 @@
     "cross-env": "^5.2.0",
     "rimraf": "^2.6.2"
   },
-  "peerDependencies": {
-    "react": "^16.6.0"
-  },
-  "gitHead": "a6aebb3ee11037295048f779f6fd6f9d7e337995"
+  "dependencies": {
+    "qs": "^6.5.2"
+  }
 }
