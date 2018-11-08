@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Toggle React library for [toggle](https://github.com/MathieuDoyon/toggle)
+Toggle React library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a>
 </p>
 
 ## Installation

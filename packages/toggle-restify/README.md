@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Toggle Restify library for [toggle](https://github.com/MathieuDoyon/toggle)
+Toggle Restify library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a>
 </p>
 
 ## Installation

@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Core library of [toggle](https://github.com/MathieuDoyon/toggle)
+Core library of <a href="https://github.com/MathieuDoyon/toggle">toggle</a>
 </p>
 
 ## Installation
