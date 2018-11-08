@@ -1,6 +1,6 @@
 {
   "name": "@mathdoy/toggle-querystring",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Toggle feature, a feature flag library for your frontend, enabled toggle through query string",
   "keywords": [],
   "main": "lib/index.js",

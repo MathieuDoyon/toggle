@@ -1,6 +1,6 @@
 {
   "name": "example-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -35,8 +35,8 @@
   },
   "dependencies": {
     "@mathdoy/toggle": "^1.0.4",
-    "@mathdoy/toggle-react": "^1.0.4",
-    "@mathdoy/toggle-querystring": "^1.0.4",
+    "@mathdoy/toggle-querystring": "^1.0.5",
+    "@mathdoy/toggle-react": "^1.0.5",
     "classnames": "^2.2.6",
     "history": "^4.7.2",
     "prop-types": "^15.6.2",
