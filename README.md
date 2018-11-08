@@ -21,7 +21,7 @@ This repository is a monorepo that we manage using [Lerna](https://github.com/le
 
 - [Install](#install)
 - [Available Scripts](#available-scripts)
-- [Running examples](#runninf-examples)
+- [Running examples](#running-examples)
 - [watching](#watching)
 
 
