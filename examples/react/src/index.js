@@ -20,8 +20,6 @@ const toggle = createToggle({
   features: toggleQuerystring(window.location.search),
 });
 
-console.log({ features: toggle.features });
-
 ReactDOM.render(
   <ToggleProvider toggle={toggle}>
     <App />
