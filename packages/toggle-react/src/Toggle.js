@@ -5,7 +5,7 @@ import { ReactToggleContext } from "./Context";
 export default class Toggle extends Component {
   static propTypes = {
     isEnabled: PropTypes.string.isRequired,
-    disable: PropTypes.element,
+    disableComponent: PropTypes.element,
   };
 
   render() {
@@ -16,8 +16,8 @@ export default class Toggle extends Component {
         {({ toggle }) =>
           toggle && toggle.isEnabled(this.props.isEnabled)
             ? this.props.children
-            : this.props.disable
-              ? this.props.disable
+            : this.props.disableComponent
+              ? this.props.disableComponent
               : null
         }
       </Context.Consumer>
