@@ -3,7 +3,8 @@
 </h1>
 
 <p align="center">
-Toggle Restify library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a>
+Toggle Restify library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a><br />
+`toggle-restify` middleware read request headers sent and overwrite default values.
 </p>
 
 ## Installation
@@ -25,6 +26,8 @@ const toggle = createToggle({
 });
 // or use default
 // const toggle = createToggle();
+
+// You can manually send `x-feat-food: true` header to overwrite the config and test your feature
 
 const hello = (req, res, next) => {
   const response = {
