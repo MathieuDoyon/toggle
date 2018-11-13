@@ -1,6 +1,6 @@
 {
   "name": "@mathdoy/toggle-restify",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Toggle feature, a feature flag library for your restify backend",
   "keywords": [
     "Toggle",
