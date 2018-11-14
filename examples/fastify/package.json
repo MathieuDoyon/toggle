@@ -1,7 +1,7 @@
 {
   "name": "example-fastify",
   "private": true,
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "",
   "scripts": {
     "start": "node src/server.js",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "@mathdoy/toggle": "^1.0.8",
-    "@mathdoy/toggle-middleware": "^1.0.9",
+    "@mathdoy/toggle-middleware": "^1.0.11",
     "fastify": "^1.13.0",
     "nodemon": "^1.18.5"
   }
