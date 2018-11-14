@@ -25,21 +25,32 @@ const toggle = {
 
   mangle(key = "") {
     return key.length
-      ? `${this.prefix.toLowerCase() ? this.prefix.toLowerCase() : ""}${key}`
+      ? `${
+          this.prefix.toLowerCase() ? this.prefix.toLowerCase() : ""
+        }${key.toLowerCase()}`
       : null;
   },
 
   unmangle(key = "") {
     return key.startsWith(this.prefix.toLowerCase())
       ? key.slice(this.prefix.length)
-      : key;
+      : key.toLowerCase();
   },
+};
+
+const initFeatures = (features = {}) => {
+  const lowercaseFeatures = {};
+  Object.keys(features).forEach(feature => {
+    lowercaseFeatures[feature.toLowerCase()] = features[feature];
+  });
+
+  return lowercaseFeatures;
 };
 
 export const createToggle = ({ prefix = "X-FEAT-", features = {} } = {}) => ({
   ...toggle,
   prefix,
-  features,
+  features: initFeatures(features),
 });
 
 export default toggle;
