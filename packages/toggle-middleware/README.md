@@ -1,16 +1,16 @@
 <h1 align="center">
-  Toggle Restify
+  Toggle Middleware
 </h1>
 
 <p align="center">
-Toggle Restify library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a><br />
-`toggle-restify` middleware read request headers sent and overwrite default values.
+Toggle Middleware library for <a href="https://github.com/MathieuDoyon/toggle">toggle</a><br />
+`toggle-middleware` middleware read request headers sent and overwrite default values.
 </p>
 
 ## Installation
 
 ```bash
-$ npm install --save @mathdoy/toggle @mathdoy/toggle-restify
+$ npm install --save @mathdoy/toggle @mathdoy/toggle-middleware
 ```
 
 ```javascript
