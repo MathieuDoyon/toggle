@@ -8,6 +8,9 @@ install: package.json ## install dependencies
 
 run: run-restify
 
+run-fastify: ## run the fastify example
+	@BABEL_ENV=cjs yarn -s run-fastify
+
 run-restify: ## run the restify example
 	@BABEL_ENV=cjs yarn -s run-restify
 
@@ -23,10 +26,13 @@ watch-react: ## watch toggle react module
 watch-restify: ## watch toggle restify module
 	@BABEL_ENV=cjs yarn -s watch:restify
 
+watch-middleware: ## watch toggle middleware module
+	@BABEL_ENV=cjs yarn -s watch:middleware
+
 watch-qs: ## watch toggle querystring module
 	@BABEL_ENV=cjs yarn -s watch:qs
 
-build: build-toggle build-toggle-react build-toggle-restify build-toggle-qs ## compile ES6 files to JS
+build: build-toggle build-toggle-react build-toggle-middleware build-toggle-restify build-toggle-qs ## compile ES6 files to JS
 
 build-toggle:
 	@echo "Transpiling toggle files...";
@@ -35,6 +41,10 @@ build-toggle:
 build-toggle-react:
 	@echo "Transpiling toggle-react files...";
 	@cd ./packages/toggle-react && BABEL_ENV=cjs yarn -s build
+
+build-toggle-middleware:
+	@echo "Transpiling toggle-middleware files...";
+	@cd ./packages/toggle-middleware && BABEL_ENV=cjs yarn -s build
 
 build-toggle-restify:
 	@echo "Transpiling toggle-restify files...";

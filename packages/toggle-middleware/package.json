@@ -1,14 +1,18 @@
 {
-  "name": "@mathdoy/toggle-restify",
+  "name": "@mathdoy/toggle-middleware",
   "version": "1.0.7",
-  "description": "Toggle feature, a feature flag library for your restify backend",
+  "description": "Toggle feature, a feature flag library for your middleware backend",
   "keywords": [
     "Toggle",
     "features",
     "feature flags",
     "flags",
     "feature toggle",
-    "feature switch"
+    "feature switch",
+    "middleware",
+    "restify",
+    "fastify",
+    "express"
   ],
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -20,8 +24,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf ./lib && cross-env NODE_ENV=production babel ./src -d ./lib --ignore spec.js,test.js",
-    "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src -d ./lib --ignore spec.js,test.js",
-    "postinstall": "node ./lib/postinstall.js"
+    "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src -d ./lib --ignore spec.js,test.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -30,8 +33,6 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "lodash.clonedeep": "^4.5.0",
-    "@mathdoy/toggle-middleware": "^1.0.7"
-  },
-  "gitHead": "a6aebb3ee11037295048f779f6fd6f9d7e337995"
+    "lodash.clonedeep": "^4.5.0"
+  }
 }

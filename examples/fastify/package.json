@@ -1,0 +1,28 @@
+{
+  "name": "example-fastify",
+  "private": true,
+  "version": "1.0.8",
+  "description": "",
+  "scripts": {
+    "start": "node src/server.js",
+    "watch": "NODE_ENV=development nodemon --watch src -e js --exec 'babel-node src/server.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.2",
+    "@mathdoy/toggle": "^1.0.8",
+    "@mathdoy/toggle-middleware": "^1.0.7",
+    "fastify": "^1.13.0",
+    "nodemon": "^1.18.5"
+  }
+}
