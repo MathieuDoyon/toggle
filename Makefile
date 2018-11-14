@@ -59,6 +59,8 @@ test: build test-unit lint ## launch all tests
 
 # test: build test-unit lint test-e2e ## launch all tests
 
+test: build test-unit lint ## launch all tests
+
 test-unit: ## launch unit tests
 	@if [ "$(CI)" != "true" ]; then \
 		echo "Running unit tests..."; \

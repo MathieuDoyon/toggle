@@ -11,8 +11,8 @@
     "build": "BABEL_ENV=cjs lerna run build",
     "test": "yarn -s test-unit",
     "test-ci": "yarn -s test-unit-ci",
-    "test-unit": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs echo \"TBD\" && exit 0;",
-    "test-unit-ci": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs echo \"TBD\" && exit 0;",
+    "test-unit": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs NODE_ICU_DATA=node_modules/full-icu jest",
+    "test-unit-ci": "cross-env NODE_ENV=test cross-env BABEL_ENV=cjs NODE_ICU_DATA=node_modules/full-icu jest --runInBand",
     "lint": "eslint ./packages/**/src",
     "watch": "cd packages/toggle && yarn -s watch",
     "watch:react": "cd packages/toggle-react && yarn -s watch",
@@ -24,7 +24,26 @@
     "doc": "echo \"TBD\" && exit 0;"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./test-setup.js"
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ],
+    "setupTestFrameworkScriptFile": "./test-setup.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/",
+      "/esm/"
+    ],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$"
+    ],
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true
+      }
+    }
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -46,6 +65,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "full-icu": "^1.2.1",
     "jest": "^23.6.0",
     "lerna": "^3.4.3",
     "prettier": "^1.14.3",

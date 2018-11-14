@@ -5,6 +5,7 @@ node_modules
 lib
 esm
 es6
+coverage/
 docs/_site/
 packages/toggle/docs
 packages/**/mathdoy-toggle-*.tgz
