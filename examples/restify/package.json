@@ -1,7 +1,7 @@
 {
   "name": "example-restify",
   "private": true,
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "scripts": {
     "start": "node src/server.js",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "@mathdoy/toggle": "^1.0.8",
-    "@mathdoy/toggle-restify": "^1.0.7",
+    "@mathdoy/toggle-restify": "^1.0.9",
     "nodemon": "^1.18.5",
     "restify": "^7.2.2"
   }
