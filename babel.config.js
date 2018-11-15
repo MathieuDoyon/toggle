@@ -31,6 +31,7 @@ module.exports = {
           },
         ],
         ["import-rename", { "^(.*)\\.jsx$": "$1" }],
+        "add-module-exports",
       ],
     },
   },
