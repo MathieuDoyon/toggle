@@ -2,7 +2,6 @@ import cloneDeep from "lodash.clonedeep";
 
 export default function toggleRestifyMiddleware(toggle) {
   return (req, res, next) => {
-    // make toggle available per request
     const requestToggle = cloneDeep(toggle);
 
     (Object.keys(req.headers) || []).forEach(header => {
