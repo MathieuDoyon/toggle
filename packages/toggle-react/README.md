@@ -37,6 +37,7 @@ ReactDOM.render(
 ```
 
 Then in your components files
+
 ```jsx
 import React, { Component } from "react";
 import { Toggle } from "@mathdoy/toggle-react";
@@ -75,7 +76,11 @@ export default App;
 You can also bind `toggle` into your component props with `withToggle`
 
 ```jsx
-import { ToggleProvider, withToggle, togglePropType } from "@mathdoy/toggle-react";
+import {
+  ToggleProvider,
+  withToggle,
+  togglePropType,
+} from "@mathdoy/toggle-react";
 
 // ...
 
@@ -88,20 +93,17 @@ class App extends Component {
     const { toggle } = this.props;
 
     return (
-      <div className="App">
-        {toggle.isEnabled("foo") && <div>foo</div>}
-      </div>
+      <div className="App">{toggle.isEnabled("foo") && <div>foo</div>}</div>
     );
   }
 }
 
-export default withToggle()(App);
+export default withToggle(App);
 ```
 
-
 ## For more information on toggle
-For more information on toggle see [toggle](https://github.com/MathieuDoyon/toggle/tree/master/packages/toggle)
 
+For more information on toggle see [toggle](https://github.com/MathieuDoyon/toggle/tree/master/packages/toggle)
 
 # Using it with restify
 

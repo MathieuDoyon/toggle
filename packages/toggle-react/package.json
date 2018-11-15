@@ -19,13 +19,16 @@
   "repository": "MathieuDoyon/toggle",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf ./lib && cross-env NODE_ENV=production babel ./src -d ./lib --ignore spec.js,test.js",
-    "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src -d ./lib --ignore spec.js,test.js"
+    "build": "rimraf ./lib && cross-env NODE_ENV=production babel ./src --config-file ../../babel.config.js -d ./lib --ignore spec.js,test.js",
+    "watch": "rimraf ./lib && cross-env NODE_ENV=production babel --watch ./src --config-file ../../babel.config.js -d ./lib --ignore spec.js,test.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-runtime": "^6.26.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
     "cross-env": "^5.2.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-test-renderer": "^16.6.3",
     "rimraf": "^2.6.2"
   },
   "peerDependencies": {

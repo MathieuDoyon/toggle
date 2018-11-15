@@ -1,1 +1,3 @@
-export * from "@mathdoy/toggle-middleware";
+import toggleMiddleware from "@mathdoy/toggle-middleware";
+
+export default toggleMiddleware;

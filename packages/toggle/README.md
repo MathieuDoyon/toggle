@@ -30,10 +30,10 @@ const toggle = createToggle({
 toggle.register("foo", true);
 
 // Look if the feature is enabled or not return Boolean
-toggle.isEnabled("foo") // true
+toggle.isEnabled("foo"); // true
 
 // Remove feature from registry
-toggle.unregister("foo")
+toggle.unregister("foo");
 ```
 
 # Using it with React
@@ -67,6 +67,7 @@ ReactDOM.render(
 ```
 
 Then in your components files
+
 ```jsx
 import React, { Component } from "react";
 import { Toggle } from "@mathdoy/toggle-react";
@@ -105,7 +106,11 @@ export default App;
 You can also bind `toggle` into your component props with `withToggle`
 
 ```jsx
-import { ToggleProvider, withToggle, togglePropType } from "@mathdoy/toggle-react";
+import {
+  ToggleProvider,
+  withToggle,
+  togglePropType,
+} from "@mathdoy/toggle-react";
 
 // ...
 
@@ -118,18 +123,15 @@ class App extends Component {
     const { toggle } = this.props;
 
     return (
-      <div className="App">
-        {toggle.isEnabled("foo") && <div>foo</div>}
-      </div>
+      <div className="App">{toggle.isEnabled("foo") && <div>foo</div>}</div>
     );
   }
 }
 
-export default withToggle()(App);
+export default withToggle(App);
 ```
 
 See more information for [toggle-react](https://github.com/MathieuDoyon/toggle/tree/master/packages/toggle-react)
-
 
 # Using it with restify
 
