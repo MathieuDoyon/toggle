@@ -37,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default withToggle()(App);
+export default withToggle(App);

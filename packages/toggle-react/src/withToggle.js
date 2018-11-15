@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ReactToggleContext } from "./Context";
 import getDisplayName from "./util/getDisplayName";
 
-const withToggle = () => Component => {
+const withToggle = Component => {
   class WithToggleHOC extends React.Component {
     render() {
       const Context = this.props.context || ReactToggleContext; // eslint-disable-line no-unused-vars
