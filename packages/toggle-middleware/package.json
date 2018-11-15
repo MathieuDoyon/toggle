@@ -1,6 +1,6 @@
 {
   "name": "@mathdoy/toggle-middleware",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "Toggle feature, a feature flag library for your middleware backend",
   "keywords": [
     "Toggle",
