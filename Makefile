@@ -74,11 +74,11 @@ test: build test-unit lint ## launch all tests
 test-unit: ## launch unit tests
 	@if [ "$(CI)" != "true" ]; then \
 		echo "Running unit tests..."; \
-		@BABEL_ENV=cjs yarn -s test-unit; \
+		yarn -s test-unit; \
 	fi
 	@if [ "$(CI)" = "true" ]; then \
 		echo "Running unit tests in CI..."; \
-		@BABEL_ENV=cjs yarn -s test-unit-ci; \
+		yarn -s test-unit-ci; \
 	fi
 
 test-unit-watch: ## launch unit tests and watch for changes
