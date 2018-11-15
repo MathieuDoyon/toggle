@@ -1,6 +1,6 @@
 import restify from "restify";
 import { createToggle } from "@mathdoy/toggle";
-import toggleRestifyMiddleware from "@mathdoy/toggle-restify";
+import toggleMiddleware from "@mathdoy/toggle-restify";
 import hello from "./handlers/hello";
 
 const toggle = createToggle({
@@ -13,7 +13,7 @@ const toggle = createToggle({
 // const toggle = createToggle();
 
 const server = restify.createServer();
-server.use(toggleRestifyMiddleware(toggle));
+server.use(toggleMiddleware(toggle));
 server.get("/hello/:name", hello);
 server.head("/hello/:name", hello);
 
