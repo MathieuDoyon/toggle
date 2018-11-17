@@ -19,4 +19,9 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended",
   ],
+  settings: {
+    react: {
+      version: "16.0", // React version, default to the latest React stable release
+    },
+  },
 };
