@@ -1,6 +1,6 @@
 import cloneDeep from "lodash.clonedeep";
 
-export default function toggleRestifyMiddleware(toggle) {
+export default function toggleMiddleware(toggle) {
   return (req, res, next) => {
     const requestToggle = cloneDeep(toggle);
 

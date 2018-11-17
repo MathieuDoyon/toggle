@@ -19,9 +19,11 @@
     "watch:restify": "cd packages/toggle-restify && yarn -s watch",
     "watch:middleware": "cd packages/toggle-middleware && yarn -s watch",
     "watch:qs": "cd packages/toggle-querystring && yarn -s watch",
+    "watch:nextjs": "cd packages/toggle-next-wrapper && yarn -s watch",
     "run-fastify": "cd examples/fastify && yarn -s watch",
     "run-restify": "cd examples/restify && yarn -s watch",
     "run-react": "cd examples/react && yarn -s start",
+    "run-nextjs": "cd examples/nextjs && yarn -s watch",
     "prettier": "prettier-eslint --write --list-different \"packages/*/src/**/*.js\" \"examples/*/src/**/*.js\"",
     "doc": "echo \"TBD\" && exit 0;"
   },

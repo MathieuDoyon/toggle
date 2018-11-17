@@ -17,6 +17,9 @@ run-restify: ## run the restify example
 run-react: ## run the react example
 	@BABEL_ENV=cjs yarn -s run-react
 
+run-nextjs: ## run the nextjs example
+	@BABEL_ENV=cjs yarn -s run-nextjs
+
 watch: ## watch toggle module
 	@BABEL_ENV=cjs yarn -s watch
 
@@ -32,7 +35,10 @@ watch-middleware: ## watch toggle middleware module
 watch-qs: ## watch toggle querystring module
 	@BABEL_ENV=cjs yarn -s watch:qs
 
-build: build-toggle build-toggle-react build-toggle-middleware build-toggle-restify build-toggle-qs ## compile ES6 files to JS
+watch-nextjs: ## watch toggle nextjs wrapper module
+	@BABEL_ENV=cjs yarn -s watch:nextjs
+
+build: build-toggle build-toggle-react build-toggle-middleware build-toggle-restify build-toggle-qs build-toggle-nextjs ## compile ES6 files to JS
 
 build-toggle:
 	@echo "Transpiling toggle files...";
@@ -53,6 +59,10 @@ build-toggle-restify:
 build-toggle-qs:
 	@echo "Transpiling toggle-qs files...";
 	@cd ./packages/toggle-querystring && BABEL_ENV=cjs yarn -s build
+
+build-toggle-nextjs:
+	@echo "Transpiling toggle-next-wrapper files...";
+	@cd ./packages/toggle-next-wrapper && BABEL_ENV=cjs yarn -s build
 
 doc: ## compile doc as html and launch doc web server
 	@yarn -s doc

@@ -12,7 +12,7 @@ Toggle React library for <a href="https://github.com/MathieuDoyon/toggle">toggle
 $ npm install --save @mathdoy/toggle @mathdoy/toggle-react
 ```
 
-```javascript
+```jsx
 import React from "react";
 import ReactDOM from "react-dom";
 import { createToggle } from "@mathdoy/toggle";
