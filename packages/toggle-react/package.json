@@ -1,6 +1,6 @@
 {
   "name": "@mathdoy/toggle-react",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Toggle React feature, a feature flag library for your react frontend",
   "keywords": [
     "Toggle",

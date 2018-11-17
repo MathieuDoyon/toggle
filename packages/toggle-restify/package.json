@@ -1,6 +1,6 @@
 {
   "name": "@mathdoy/toggle-restify",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Toggle feature, a feature flag library for your restify backend",
   "keywords": [
     "Toggle",
@@ -30,7 +30,7 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "@mathdoy/toggle-middleware": "^1.1.1",
+    "@mathdoy/toggle-middleware": "^1.1.2",
     "lodash.clonedeep": "^4.5.0"
   },
   "gitHead": "a6aebb3ee11037295048f779f6fd6f9d7e337995"
