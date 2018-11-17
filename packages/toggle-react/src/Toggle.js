@@ -6,6 +6,8 @@ export default class Toggle extends Component {
   static propTypes = {
     isEnabled: PropTypes.string.isRequired,
     disableComponent: PropTypes.element,
+    context: PropTypes.any,
+    children: PropTypes.node,
   };
 
   render() {
