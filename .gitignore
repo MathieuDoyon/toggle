@@ -5,6 +5,7 @@ node_modules
 lib
 esm
 es6
+.next
 .DS_Store
 coverage/
 docs/_site/
